@@ -9,9 +9,9 @@ from reportlab.lib.utils import ImageReader
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
 
-class PDFSignatureApp(Gtk.Window):
+class Cerfator(Gtk.Window):
     def __init__(self):
-        super().__init__(title="PDF Signature App")
+        super().__init__(title="Cerfator: signez vos cerfa")
         self.set_border_width(10)
         self.set_default_size(400, 300)
 
@@ -145,7 +145,7 @@ class PDFSignatureApp(Gtk.Window):
         dialog.destroy()
 
 if __name__ == "__main__":
-    app = PDFSignatureApp()
+    app = Cerfator()
     app.connect("destroy", Gtk.main_quit)
     app.show_all()
     Gtk.main()

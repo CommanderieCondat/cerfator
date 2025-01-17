@@ -45,6 +45,7 @@ class PDFSignatureApp:
         # Page input
         tk.Label(root, text="Page(s) (e.g., '1', '1-3', '1,3,5')").pack(pady=5)
         self.page_input = tk.Entry(root)
+        self.page_input.insert(0,"2") # Default value
         self.page_input.pack(pady=5)
 
         # Process button

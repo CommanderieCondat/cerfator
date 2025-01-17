@@ -1,0 +1,5 @@
+.draft/
+build/
+.venv/
+dist/
+*.spec
